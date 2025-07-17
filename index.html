@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samar's Website</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div>
+        <h1>Calculator</h1>
+        <input type="text" placeholder="Calculate... " id="display" disabled>
+        <br>
+        <button type="button" onclick="appendValue('1')">1</button>
+        <button type="button" onclick="appendValue('2')">2</button>
+        <button type="button" onclick="appendValue('3')">3</button>
+        <button type="button" onclick="appendValue('+')">+</button>
+        <button type="button" onclick="appendValue('&#40;')">(</button>
+        <br>
+        <button type="button" onclick="appendValue('4')">4</button>
+        <button type="button" onclick="appendValue('5')">5</button>
+        <button type="button" onclick="appendValue('6')">6</button>
+        <button type="button" onclick="appendValue('-')">-</button>
+        <button type="button" onclick="appendValue('&#41;')">)</button>
+        <br>
+        <button type="button" onclick="appendValue('7')">7</button>
+        <button type="button" onclick="appendValue('8')">8</button>
+        <button type="button"onclick="appendValue('9')">9</button>
+        <button type="button"onclick="appendValue('*')">x</button>
+        <button type="button" onclick="appendValue('%')">%</button>
+
+        <br>
+        <button type="button" onclick="appendValue('0')">0</button>
+        <button type="button" onclick="calculate()">=</button>
+        <button type="button" onclick="clearDisplay()">c</button>
+        <button type="button" onclick="appendValue('/')">/</button>
+        <button type="button" onclick="appendValue('.')">.</button>
+
+        <div>    <h1>Quiz game</h1>
+        <p>Who was the president of the United States from 2012-2016?
+            <p>a. Joe Biden</p>
+            <p>b. Donald Trump</p>
+            <p>c. Barack Obama</p>
+            <input type="text" placeholder="Enter your answer">
+        </p></div>
+    </div>
+    
+    <div>
+        <h1>Samar's Website</h1>
+        <div>
+            Hi I am Samar. I made this website because I wanted to help people in a fun way. So on this website there are challenges that are fun but boost your IQ also. I hope you enjoy my website. I have put a lot of work into it.
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>What is 11+63-45x2-34+17?
+            <p>a. 33</p>
+            <p>b. -33</p>
+            <p>c. 35</p>
+            <p>d. -35</p>
+            <input type="text" placeholder="Enter your answer">
+        </p>
+        
+    </div>
+    <div>
+        <h1>Guess the Number! </h1>
+        <h1 id="guess">?</h1>
+        <div>
+            <input id="guessdisplay" type="text" placeholder="I am thinking of a number between 1-100. Enter your guess">
+            <button onclick="handleSubmit()">Guess</button>
+        </div>
+        
+
+            <br><br><br><br><br><br>
+        <div>
+        <h1>Fidget click</h1>
+        <h1 id="status">0</h1>
+        <button onclick="Clicker()">Click me!</button>
+        <br><br>
+        <div><p>Where is Casablanca</p>
+        <p>a. Spain</p>
+        <p>b. Ibiza</p>
+        <p>c. Bermuda</p>
+        <p>d. Morroco</p>
+        <input type="text" placeholder="Enter your answer"></div>
+        
+    </div>
+    </div>
+    <script src="/src/script.js"></script>
+        
+
+</body>
+</html>
