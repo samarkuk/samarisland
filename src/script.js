@@ -37,3 +37,27 @@ function handleSubmit(){
         document.getElementById('guess').innerHTML = `You have guessed it! The number was ${secretnumber}`
     }
 }
+
+function submitAnswers(){
+    
+    var ans1= document.getElementById("ans1").value
+    var ans2= document.getElementById("ans2").value
+    var ans3= document.getElementById("ans3").value
+    var a1 = ans1.toLowerCase().replace(/\s/g, '');
+    var a2 = ans2.toLowerCase().replace(/\s/g, '');
+    var a3 = ans3.toLowerCase().replace(/\s/g, '');
+    var score = 0;
+     if (a1 === "c" || a1 === "c." || a1 === "barackobama") {
+        score++;
+    }
+
+    if (a2 === "b" || a2 === "b." || a2 === "-33") {
+        score++;
+    }
+
+    if (a3 === "d" || a3 === "d." || a3 === "morocco") {
+        score++;
+    }
+
+    alert("Your score: " + score);
+}
